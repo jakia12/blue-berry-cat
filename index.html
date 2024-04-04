@@ -44,8 +44,12 @@
 
     <style>
       @font-face {
-        font-family: myFirstFont;
-        src: url("/Wicked Mouse Demo.otf");
+        font-family: "Milker"; /* Name of your font */
+        src: url("/Milker.otf") format("woff2"),
+          /* Path to your font file */ url("/Milker.otf") format("woff"); /* Fallback for older browser support */
+        /* Optionally, you can specify font weight and style */
+        font-weight: normal;
+        font-style: normal;
       }
 
       :root {
@@ -57,7 +61,7 @@
       .body {
         background-color: var(--main-3);
         color: var(--white);
-        font-family: myFirstFont;
+        font-family: Milker;
         text-shadow: 2px 2px #141700;
       }
       .body-wrap {
@@ -240,8 +244,9 @@
                 transform-style: preserve-3d;
               "
               class="heading-2 cta"
+              style="font-family: 'Milker' !important"
             >
-              Welcome to the Easter and cutest
+              Welcome to the cutest
               <br />Blue Berry Cat
             </h1>
             <p
@@ -380,6 +385,7 @@
               transform-style: preserve-3d;
             "
             class="heading-2"
+            style="font-family: 'Milker'"
           >
             Tokenomics
           </h1>
@@ -524,7 +530,10 @@
               <h1 class="digits" style="color: #111; text-shadow: none">
                 90<span class="text-span-2">%</span>
               </h1>
-              <p class="tokenomics-text" style="color: #111; text-shadow: none">
+              <p
+                class="tokenomics-text"
+                style="color: #111; text-shadow: none; font-family: verdana"
+              >
                 Liquidity Pool
               </p>
             </div>
@@ -546,7 +555,10 @@
               <h1 class="digits" style="color: #111; text-shadow: none">
                 7<span class="text-span-2">%</span>
               </h1>
-              <p class="tokenomics-text" style="color: #111; text-shadow: none">
+              <p
+                class="tokenomics-text"
+                style="color: #111; text-shadow: none; font-family: verdana"
+              >
                 Marketing
               </p>
             </div>
@@ -568,7 +580,10 @@
               <h1 class="digits" style="color: #111; text-shadow: none">
                 3<span class="text-span-2">%</span>
               </h1>
-              <p class="tokenomics-text" style="color: #111; text-shadow: none">
+              <p
+                class="tokenomics-text"
+                style="color: #111; text-shadow: none; font-family: verdana"
+              >
                 Cex
               </p>
             </div>
@@ -661,7 +676,14 @@
             "
             class="contract"
           >
-            <p class="address" style="color: #111; text-shadow: none">
+            <p
+              class="address"
+              style="
+                color: #111;
+                text-shadow: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+            >
               0x0000000000000000000000000000000000
             </p>
           </div>
@@ -828,7 +850,11 @@
                 <img src="/2.png" loading="lazy" alt="" class="image-4" />
                 <p
                   class="paragraph-4"
-                  style="color: #111111; text-shadow: none"
+                  style="
+                    color: #111111;
+                    text-shadow: none;
+                    font-family: verdana;
+                  "
                 >
                   Download Metamask or your wallet of choice from the app store
                   or google play store for free. Desktop users, download the
@@ -866,18 +892,16 @@
                 <img src="/2.png" loading="lazy" alt="" class="image-4" />
                 <p
                   class="paragraph-4"
-                  style="color: #111111; text-shadow: none"
+                  style="
+                    color: #111111;
+                    text-shadow: none;
+                    font-family: Verdana;
+                  "
                 >
                   Have Base in your wallet to switch to
-                  <span
-                    style="
-                      font-family: Verdana, Geneva, Tahoma, sans-serif;
-                      font-weight: bold;
-                    "
-                    >$</span
-                  >BCAT. If you don’t have any Base, you can buy directly on
-                  Metamask, transfer from another wallet, or buy on another
-                  exchange and send it to your wallet
+                  <span>$</span>BCAT. If you don’t have any Base, you can buy
+                  directly on Metamask, transfer from another wallet, or buy on
+                  another exchange and send it to your wallet
                 </p>
               </div>
             </div>
@@ -913,7 +937,11 @@
                 <img src="/2.png" loading="lazy" alt="" class="image-4" />
                 <p
                   class="paragraph-4"
-                  style="color: #111111; text-shadow: none"
+                  style="
+                    color: #111111;
+                    text-shadow: none;
+                    font-family: verdana;
+                  "
                 >
                   Connect to Uniswap. Go to Uniswap in google chrome or on the
                   browser inside your Metamask app. Connect your wallet. Paste
@@ -956,6 +984,7 @@
                   width="89"
                   alt=""
                   class="image-5"
+                  style="opacity: 0"
                 />
                 <p
                   class="paragraph-2"
@@ -971,7 +1000,10 @@
                   >BCAT
                 </p>
                 <img src="/2.png" loading="lazy" alt="" class="image-4" />
-                <p class="paragraph-4" style="color: #111; text-shadow: none">
+                <p
+                  class="paragraph-4"
+                  style="color: #111; text-shadow: none; font-family: verdana"
+                >
                   Connect to Uniswap. Go to Uniswap in google chrome or on the
                   browser inside your Metamask app. Connect your wallet. Paste
                   the
@@ -1079,20 +1111,15 @@
               width: 98%;
               max-width: 800px;
               margin: 0 auto;
+              font-family: Verdana;
             "
           >
-            <span
-              style="
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-weight: bold;
-              "
-              >$</span
-            >BCAT WAS MADE FOR SATIRICAL AND ENTERTAINMENT/COMEDIC PURPOSES AND
-            HAS NO VALUE. DON’T RISK MONEY YOU CANNOT OR ARE AFRIAD OF LOSING.
-            THE PRICE MAY GO UP OR IT MAY GO DOWN, OR TO ZERO AT ANYTIME. WE ARE
-            NOT RESPONSIBLE FOR THE PRICE OF THE TOKEN, OR LIABLE FOR ANY LOSS
-            OF FUNDS, AND WE OWN THE RIGHT TO MODIFY, REMOVE, OR ADD ANYTHING AT
-            ANYTIME.
+            <span style="font-family: Verdana">$</span>BCAT WAS MADE FOR
+            SATIRICAL AND ENTERTAINMENT/COMEDIC PURPOSES AND HAS NO VALUE. DON’T
+            RISK MONEY YOU CANNOT OR ARE AFRIAD OF LOSING. THE PRICE MAY GO UP
+            OR IT MAY GO DOWN, OR TO ZERO AT ANYTIME. WE ARE NOT RESPONSIBLE FOR
+            THE PRICE OF THE TOKEN, OR LIABLE FOR ANY LOSS OF FUNDS, AND WE OWN
+            THE RIGHT TO MODIFY, REMOVE, OR ADD ANYTHING AT ANYTIME.
           </p>
         </div>
       </section>
